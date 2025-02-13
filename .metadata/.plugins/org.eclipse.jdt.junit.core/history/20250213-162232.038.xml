@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MyTestRunner (1)" project="cucumber" tests="1" started="1" failures="0" errors="4" ignored="0">
+  <testsuite name="testrunners.MyTestRunner" time="0.175">
+    <testsuite name="Login page feature" time="0.175">
+      <testcase name="Login page title" classname="Login page feature" time="0.175">
+        <error>java.lang.NullPointerException: Cannot invoke "java.util.Properties.load(java.io.InputStream)" because "this.prop" is null&#13;
+	at com.jani.utilities.ConfigReader.init_prop(ConfigReader.java:18)&#13;
+	at apphooks.ApplicationHooks.getProperty(ApplicationHooks.java:27)&#13;
+&#13;
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "this.prop" is null&#13;
+	at apphooks.ApplicationHooks.launchBrowser(ApplicationHooks.java:34)&#13;
+&#13;
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null&#13;
+	at apphooks.ApplicationHooks.tearDown(ApplicationHooks.java:53)&#13;
+&#13;
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null&#13;
+	at apphooks.ApplicationHooks.quitBrowser(ApplicationHooks.java:42)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

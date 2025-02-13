@@ -1,0 +1,22 @@
+package apphooks;
+
+import java.util.Properties;
+
+import com.jani.utilities.ConfigReader;
+
+public class ApplicationHooks 
+{
+	ConfigReader configReader;
+	Properties prop;
+
+	public void Getproperty()
+	{
+		configReader = new ConfigReader();
+		prop = configReader.init_prop();
+	}
+	
+	public void launchBrowser()
+	{
+		prop.getProperty("browser");
+	}
+}

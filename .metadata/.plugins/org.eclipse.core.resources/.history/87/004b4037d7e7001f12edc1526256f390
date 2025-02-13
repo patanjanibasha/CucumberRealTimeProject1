@@ -1,0 +1,24 @@
+package com.jani.utilities;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Properties;
+
+public class ConfigReader {
+
+	private Properties prop;
+	private String path=".\\src\\test\\resources\\com\\config\\config.properties";
+	
+	public void init_prop()
+	{
+		try 
+		{
+			FileInputStream fi = new FileInputStream(path);
+		} 
+		catch (FileNotFoundException e) 
+		{
+			e.printStackTrace();
+		}
+	}
+	
+}

@@ -1,0 +1,5 @@
+package com.jani.utilities;
+
+public class ConfigReader {
+
+}
